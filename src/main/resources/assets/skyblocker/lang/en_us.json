@@ -177,6 +177,9 @@
   "skyblocker.config.dungeons.bloodCampHelper": "Blood Camp Helper",
   "skyblocker.config.dungeons.bloodCampHelper.@Tooltip": "Predicts mob movement in the Blood Room to assist camping.",
 
+  "skyblocker.config.dungeons.keepClearLocations": "Record clear locations",
+  "skyblocker.config.dungeons.keepClearLocations.@Tooltip": "Record locations where rooms where cleared for development purposes",
+
   "skyblocker.config.dungeons.classBasedPlayerGlow": "Class-based Player Glow",
   "skyblocker.config.dungeons.classBasedPlayerGlow.@Tooltip": "Changes the color of your teammates glow to be based on their class rather than their rank.",
 

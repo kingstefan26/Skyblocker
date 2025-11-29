@@ -139,6 +139,15 @@ public class DungeonsCategory {
 								newValue -> config.dungeons.bloodCampHelper = newValue)
 						.controller(ConfigUtils.createBooleanController())
 						.build())
+				.option(Option.<Boolean>createBuilder()
+						.name(Text.translatable("skyblocker.config.dungeons.keepClearLocations"))
+						.description(Text.translatable("skyblocker.config.dungeons.keepClearLocations.@Tooltip"))
+						.binding(defaults.dungeons.recordClearLocations,
+								() -> config.dungeons.recordClearLocations,
+								newValue -> config.dungeons.recordClearLocations = newValue)
+						.controller(ConfigUtils.createBooleanController())
+						.build()
+				)
 
 				// Map
 				.group(OptionGroup.createBuilder()
