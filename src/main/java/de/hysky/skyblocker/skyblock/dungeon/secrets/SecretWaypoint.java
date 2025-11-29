@@ -127,7 +127,9 @@ public class SecretWaypoint extends DistancedNamedWaypoint {
         AOTV("aotv", secretWaypoints -> secretWaypoints.enableAotvWaypoints, 252, 98, 3),
         PEARL("pearl", secretWaypoints -> secretWaypoints.enablePearlWaypoints, 57, 117, 125),
         PRINCE("prince", secretWaypoints -> secretWaypoints.enablePrinceWaypoints, 133, 21, 13),
-        DEFAULT("default", secretWaypoints -> secretWaypoints.enableDefaultWaypoints, 190, 255, 252);
+        DEFAULT("default", secretWaypoints -> secretWaypoints.enableDefaultWaypoints, 190, 255, 252),
+		CLEARLOCATION("clearlocation", secretWaypoints -> secretWaypoints.enableRoomClearWaypoints, 24, 16, 115);
+
         public static final Codec<Category> CODEC = StringIdentifiable.createCodec(Category::values);
         private final String name;
         private final Predicate<DungeonsConfig.SecretWaypoints> enabledPredicate;

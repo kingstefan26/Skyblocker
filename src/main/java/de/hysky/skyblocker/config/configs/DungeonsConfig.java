@@ -209,6 +209,8 @@ public class DungeonsConfig {
 		public boolean enablePrinceWaypoints = true;
 
 		public boolean enableDefaultWaypoints = true;
+
+		public boolean enableRoomClearWaypoints = true;
 	}
 
 	public static class MimicMessage {

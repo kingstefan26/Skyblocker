@@ -326,6 +326,8 @@
   "skyblocker.config.dungeons.secretWaypoints.enableChestWaypoints": "Enable Chest Waypoints",
   "skyblocker.config.dungeons.secretWaypoints.enableDefaultWaypoints": "Enable Default Waypoints",
   "skyblocker.config.dungeons.secretWaypoints.enableDefaultWaypoints.@Tooltip": "This includes all waypoints that do not belong to a category.",
+  "skyblocker.config.dungeons.secretWaypoints.enableRoomClearWaypoints": "Enable Room Clear Waypoints.",
+  "skyblocker.config.dungeons.secretWaypoints.enableRoomClearWaypoints.@Tooltip": "Rough locations where room clear mobs are located.",
   "skyblocker.config.dungeons.secretWaypoints.enableEntranceWaypoints": "Enable Entrance Waypoints",
   "skyblocker.config.dungeons.secretWaypoints.enableFairySoulWaypoints": "Enable Fairy Soul Waypoints",
   "skyblocker.config.dungeons.secretWaypoints.enableItemWaypoints": "Enable Item Waypoints",

@@ -647,6 +647,14 @@ public class DungeonsCategory {
 										newValue -> config.dungeons.secretWaypoints.enableDefaultWaypoints = newValue)
 								.controller(ConfigUtils.createBooleanController())
 								.build())
+						.option(Option.<Boolean>createBuilder()
+								.name(Text.translatable("skyblocker.config.dungeons.secretWaypoints.enableRoomClearWaypoints"))
+								.description(Text.translatable("skyblocker.config.dungeons.secretWaypoints.enableRoomClearWaypoints"))
+								.binding(defaults.dungeons.secretWaypoints.enableRoomClearWaypoints,
+										() -> config.dungeons.secretWaypoints.enableRoomClearWaypoints,
+										newValue -> config.dungeons.secretWaypoints.enableRoomClearWaypoints = newValue)
+								.controller(ConfigUtils.createBooleanController())
+								.build())
 						.build())
 
 				// Mimic Message
