@@ -11,6 +11,8 @@ for line in lines:
     z = int(z)
     locations.append([name, x, y, z])
 
+
+
 # print('Raw data:')
 # print(locations)
 
@@ -31,7 +33,7 @@ print(f'Loaded {len(locations)} clear mob locatios, from {len(rooms)} rooms')
 import math
 
 def dis(a, b):
-    return math.sqrt(abs(a[0] - b[0]) + (a[1] - b[1]) + (a[2] - b[2]))
+    return math.sqrt(abs((a[0] - b[0]) + (a[1] - b[1]) + (a[2] - b[2])))
 
 for name, blockPositions in rooms.items():
     if(len(blockPositions) > 1):
@@ -44,4 +46,12 @@ for name, blockPositions in rooms.items():
                 lastVec = vec
             avg_distance = sum_of_distances / (len(blockPositions) - 1)
         if avg_distance > 3:
-            print(f'Seems like {name} is not stable, more then one spawn point? avg dis: {avg_distance} {blockPositions}')
+            print(f'Seems like {name} is not stable, more then one spawn point/data collection error? avg dis: {avg_distance} {blockPositions}')
+
+
+sum_of_y = 0
+for location in locations:
+    _, _, y, _ = location
+    sum_of_y += y
+avg_y = sum_of_y / len(locations)
+print(f'avg y value: {avg_y}')
